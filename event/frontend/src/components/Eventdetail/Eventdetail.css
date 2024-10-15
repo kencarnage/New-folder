@@ -1,0 +1,17 @@
+/* src/components/EventDetails/EventDetails.css */
+
+.event-details-container {
+    padding: 2rem;
+    background-color: #e0f7fa;
+  }
+  
+  .event-details-container h1 {
+    font-size: 2rem;
+    color: #00796b;
+  }
+  
+  .event-details-container p {
+    font-size: 1.2rem;
+    color: #004d40;
+  }
+  

@@ -1,27 +1,20 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-import EventDetails from './components/EventDetails';
-
-
-
-// App.js
-
+import Login from './components/Login';
+import Eventdetail from './components/Eventdetail'
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/event/:id" component={EventDetails} />
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/eventdetail" element={<Eventdetail/>}/>
       </Routes>
     </Router>
   );
 }
-
-
-
 
 export default App;
